@@ -573,7 +573,7 @@ p {
       background-position: left center; } }
   @media (max-width: 767px) {
     .header-banner {
-      /* background-position: left center; */
+      background-position: left center;
       height: 670px; } }
 
 .header-banner-content .sub-title {
