@@ -1,0 +1,111 @@
+
+
+
+/*===========================
+      10.CONTACT css 
+===========================*/
+
+.contact-area{
+    background-color: $gray;
+    position: relative;
+}
+
+.form-message{
+    &.error,
+    &.success{
+        font-size: 16px;
+        color: $black;
+        padding: 10px 15px;
+        margin-top: 15px;
+        background-color: $white;
+        margin-left: 15px;
+    }
+    &.error{
+        color: #fc3832;
+    }
+}
+
+.contact-shape-left{
+    position: absolute;
+    top: 48px;
+    left: 0;    
+    
+    & img{
+        @media #{$lg} {
+            width: 200px;
+        }
+        @media #{$md} {
+            width: 170px;
+        }
+        @media #{$xs} {
+            width: 80px;
+        }
+        @media #{$sm} {
+            width: 120px;
+        }
+    }
+}
+.contact-shape-right{
+    position: absolute;
+    top: 48px;
+    right: 0; 
+    
+    & img{
+        @media #{$lg} {
+            width: 200px;
+        }
+        @media #{$md} {
+            width: 170px;
+        }
+        @media #{$xs} {
+            width: 80px;
+        }
+        @media #{$sm} {
+            width: 120px;
+        }
+    }
+}
+
+
+.single-form{
+    position: relative;
+    
+    & label{
+        font-size: 14px;
+        line-height: 20px;
+        color: $body-color;
+        position: absolute;
+        top: -10px;
+        left: 44px;
+    }
+    & input{
+        width: 100%;
+        height: 50px;
+        border: 0;
+        border-bottom: 2px solid $border-color;
+        background-color: $gray;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $heading-color;
+        padding-left: 44px;
+        padding-right: 20px;
+        
+    }
+    & i{
+        font-size: 24px;
+        color: $heading-color;
+        position: absolute;
+        line-height: 50px;
+        left: 10px;
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,256 @@
+
+
+
+/*===========================
+    2.HEADER css 
+===========================*/
+
+
+.header-area{}
+
+.navbar-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    @include transition(0.3s);
+}
+
+.navbar{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand{}
+
+.navbar-toggler{
+    padding: 0;
+    
+    & .toggler-icon{
+        width: 30px;
+        height: 2px;
+        display: block;
+        background-color: $heading-color;
+        margin: 5px 0;
+        position: relative;
+        @include transition(0.3s);
+    }
+    &.active{
+        & .toggler-icon{
+            &:nth-of-type(1){
+                @include transform(rotate(45deg));
+                top: 7px;
+            }
+            &:nth-of-type(2){
+                opacity: 0;
+            }
+            &:nth-of-type(3){
+                @include transform(rotate(135deg));
+                top: -7px;
+            }
+        }
+    }
+}
+
+.navbar-collapse{
+    @media #{$md} {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        padding: 8px 15px;
+        @include box-shadow (0px 2px 4px rgba(0, 0, 0, 0.04));
+    }
+    @media #{$xs} {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        padding: 0px 12px;
+        @include box-shadow (0px 2px 4px rgba(0, 0, 0, 0.04));
+    }
+}
+
+.navbar-nav{
+    & .nav-item{
+        margin-left: 35px;
+        
+        &:first-child{
+            margin-left: 0;
+        }
+        
+        @media #{$md} {
+            margin: 5px 0;
+        }
+        @media #{$xs} {
+            margin: 5px 0;
+        }
+        
+        & a{
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $heading-color;
+            @include transition(0.3s);
+            
+            &.active{
+                 color: $theme-color;
+            }
+        }
+        
+        &:hover{
+            & a{
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.navbar-btn{
+    margin-left: 25px;
+    
+    @media #{$md} {
+        position: absolute;
+        top: 50%;
+        right: 55px;
+        @include transform(translateY(-50%));
+    }
+    @media #{$xs} {
+        position: absolute;
+        top: 50%;
+        right: 45px;
+        @include transform(translateY(-50%));
+    }
+    @media #{$sm} {
+        right: 55px;
+    }
+    
+    & .main-btn{
+        @media #{$xs} {
+            font-size: 14px;
+            padding: 0 8px;
+            line-height: 32px;
+        }
+        @media #{$sm} {
+            font-size: 16px;
+            padding: 0 16px;
+            line-height: 40px;
+        }
+        
+        & i{
+            @media #{$xs} {
+                margin-right: 5px;
+            }
+            @media #{$sm} {
+                margin-right: 12spx;
+            }
+        }
+    }
+}
+
+.sticky{
+    position: fixed;
+    background-color: #fff;
+    @include box-shadow (0px 2px 4px rgba(0, 0, 0, 0.04));
+    z-index: 99;
+}
+
+
+/*===== Header Banner =====*/
+
+.header-banner{
+    height: 720px;
+    
+    @media #{$desktop}{
+        height: 960px;
+    }
+    
+    @media #{$md} {
+        background-position: left center;
+    }
+    @media #{$xs} {
+        background-position: left center;
+        height: 670px;
+    }
+}
+
+
+.header-banner-content{
+    & .sub-title{
+        font-weight: 600;
+        font-size: 24px;
+        color: $body-color;
+        line-height: 30px;
+        
+        @media #{$xs}{
+            font-size: 18px;
+        }
+    }
+    & .header-title{
+        font-size: 52px;
+        font-weight: 800;
+        line-height: 65px;
+        
+        @media #{$lg} {
+            font-size: 48px;
+        }
+        
+        @media #{$xs}{
+            font-size: 30px;
+        }
+    }
+    & .text{}
+    & ul{
+        padding-top: 20px;
+        
+        & li{
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 25px;
+            
+            &:last-child{
+                margin-right: 0;
+            }
+            
+            & .main-btn{}
+            & .banner-preview{
+                font-size: 16px;
+                font-weight: 700;
+                color: $heading-color;
+                text-transform: uppercase;
+                line-height: 24px;
+                @include transition(0.3s);
+                
+                & i{
+                    margin-right: 5px;
+                }
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

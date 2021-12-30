@@ -1,0 +1,43 @@
+// Font Family
+$nunito: 'Nunito Sans', sans-serif;
+
+
+// Colors ---------------
+$white: #fff;
+$black: #222;
+$gray: #F8F8F8;
+
+
+// Theme Color
+
+$theme-color: #2768FF;
+$theme-color-2: #E7EAFF;
+
+
+// Body Color
+
+$body-color: rgba(0, 0, 0, 0.64);
+
+
+// Border Color
+
+$border-color: #A4A4A4;
+
+
+// Heading Color
+$heading-color: rgba(0, 0, 0, 0.8);
+
+
+// Soft color
+$black-soft:#7e7e7e;
+
+
+// Responsive Variables
+$desktop: 'only screen and (min-width: 1400px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+

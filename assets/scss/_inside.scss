@@ -1,0 +1,81 @@
+
+
+
+/*===========================
+      3.INSIDE css 
+===========================*/
+
+
+.inside-area{
+    position: relative;
+    
+}
+
+.inside-illustration{
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    
+    @media #{$desktop}{
+        left: 13%;
+    } 
+    @media #{$md}{
+        position: relative;
+        width: 720px;
+        text-align: center;
+        margin-top: 32px;
+        padding: 0 15px;
+        left: 0;
+    } 
+    @media #{$xs}{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 32px;
+        padding: 0 15px;
+        left: 0;
+    }    
+    
+    & img{
+        
+    }
+}
+
+.inside-content{}
+
+.single-inside-items{
+    padding-top: 39px;
+    
+    & .inside-items-icon{}
+    & .inside-items-content{
+        padding-top: 14px;
+        
+        & .inside-title{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 30px;
+            
+            @media #{$xs} {
+                font-size: 20px;
+            }
+        }
+        & .text{
+            margin-top: 8px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+

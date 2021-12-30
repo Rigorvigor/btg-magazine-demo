@@ -1,0 +1,95 @@
+
+
+
+/*===========================
+     6.TESTIMONIAL css 
+===========================*/
+
+.testimonial-area{
+    background-color: $gray;
+    position: relative;
+}
+
+.testimonial-illustration{
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    
+    @media #{$desktop}{
+        left: 13%;
+    }    
+    @media #{$md}{
+        position: relative;
+        width: 720px;
+        text-align: center;
+        margin-top: 32px;
+        padding: 0 15px;
+        left: 0;
+    } 
+    @media #{$xs}{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 32px;
+        padding: 0 15px;
+        left: 0;
+    }  
+    
+    & img{
+        
+    }
+}
+
+.testimonial-more{
+    & a{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $theme-color;
+        margin-top: 56px;
+    }
+}
+
+.single-testimonial{
+    margin-top: 48px;
+    
+    & .testimonial-author{
+        & img{
+            border-radius: 50%;
+        }
+    }
+    & .testimonial-content{
+        padding-left: 16px;
+        
+        & .text{}
+        & .author-name{
+            margin-top: 16px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        & .sub-title{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: $body-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
