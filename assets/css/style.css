@@ -520,6 +520,7 @@ p {
   left: 0;
   width: 100%;
   z-index: 9;
+  padding-bottom: 20px;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -717,6 +718,28 @@ p {
   }
 }
 
+.header-banner2 {
+  height: auto;
+}
+@media only screen and (min-width: 1400px) {
+  .header-banner2 {
+    height: 960px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-banner2 {
+    background-position: right center;
+  }
+}
+@media (max-width: 767px) {
+  .header-banner2 {
+    background-position: left center;
+    height: 670px;
+  }
+}
+
+
+
 .header-banner-content .sub-title {
   font-weight: 600;
   font-size: 24px;
@@ -729,18 +752,21 @@ p {
   }
 }
 .header-banner-content .header-title {
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 800;
-  line-height: 65px;
+  line-height: 60px;
+  padding-bottom: 10px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .header-banner-content .header-title {
     font-size: 48px;
+    line-height: 60px;
   }
 }
 @media (max-width: 767px) {
   .header-banner-content .header-title {
     font-size: 30px;
+    line-height: 46px;
   }
 }
 .header-banner-content ul {
@@ -801,6 +827,7 @@ p {
   }
 }
 @media (max-width: 767px) {
+  
   .inside-illustration {
     position: relative;
     width: 100%;
@@ -808,6 +835,13 @@ p {
     margin-top: 32px;
     padding: 0 15px;
     left: 0;
+  }
+}
+
+@media (max-width: 700px)
+{
+  .inside-area{
+    padding-top: 400px;
   }
 }
 
@@ -1555,20 +1589,59 @@ p {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .mobile-first{
-  display: block;
+    display: block;
+    padding-top: 80px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom:40px;
+    font-size:29px;
+    text-align:center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: 'Jost', sans-serif;
   }
 }
 @media only screen and (max-width: 767px) {
   .mobile-first{
   display: block;
-  padding-top: 20px;
+  padding-top: 300px;
   padding-left: 3px;
   padding-right: 3px;
-  padding-bottom:20px;
+  padding-bottom:40px;
   font-size:19px;
   text-align:center;
   text-transform: uppercase;
   line-height: 1.4;
   font-family: 'Jost', sans-serif;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  .mobile-first{
+    display: block;
+    padding-top: 400px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom:40px;
+    font-size:19px;
+    text-align:center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: 'Jost', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 400px) and  (max-width: 600px) {
+  .mobile-first{
+    display: block;
+    padding-top: 200px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom:40px;
+    font-size:19px;
+    text-align:center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    font-family: 'Jost', sans-serif;
+    }
 }
