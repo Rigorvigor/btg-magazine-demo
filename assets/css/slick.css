@@ -80,7 +80,7 @@
     float: left;
 
     height: 100%;
-    min-height: 1px;
+    min-height: 0.0625rem;
 }
 [dir='rtl'] .slick-slide
 {
@@ -112,7 +112,7 @@
 
     height: auto;
 
-    border: 1px solid transparent;
+    border: 0.0625rem solid transparent;
 }
 .slick-arrow.slick-hidden {
     display: none;
